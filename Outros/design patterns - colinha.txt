@@ -1,0 +1,41 @@
+strategy -> interface, tudo no mesmo pacote, muda em tempo de execução, hashi e garfo
+	main -> instancia a interface = novo objeto();
+	interface -> tem todos os objetos sem que a main importe todos eles
+	objetos -> implementam a interface separadamente
+	
+	exemplo: meio de transporte [correios]
+		main = correios
+		interface = IMeioDeEntrega
+		objetos = carro, moto, bicicleta
+
+template -> classe abstrata, passos de execução, pacote diferente pra main, PDF e Excel
+	main -> instancia um objeto que segue o template
+	classe abstrata -> contém o plano de execução e os métodos que podem variar (protected abstract)
+	objetos -> herdam a classe abstrata e implementam os métodos abstratos de acordo com sua necessidade
+
+	exemplo: presentes
+		main = cliente
+		classe abstrata = processo de compra
+			-> pagamento
+			-> embalamento
+			-> entrega
+		objetos = pedido na loja, pedido pela internet
+		
+factory method -> fabrica de objetos, retorna objeto,mesmo pacote, pizza
+	main -> instancia a fabrica e ela instancia o objeto
+	fabrica -> recebe algo que identifique o objeto a ser criado, com um if
+	interface -> determina o objeto e o que precisa ser implementado nele
+	objetos -> implementam a interface para identificar o objeto
+	
+	exemplo: sorvete
+		main = cliente pede o sabor
+		fabrica = fabrica de sorvete de acordo com o sabor do cliente
+		interface = sorvete
+		objeto = morango, chocolate, creme
+		
+bridge -> variar lados independentemente, strategy + template, plano de execução que um método pode mudar em tempo de execução, arquivo e modo de exportação
+	template: criação de um mangá/revista
+	strategy: páginas coloridas/apenas escrita
+
+dica: sempre tente aplicar os design's em cenários de coisas que você goste
+

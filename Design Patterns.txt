@@ -1,0 +1,50 @@
+Criacionais
+
+	Abstract Factory
+	Builder
+[Feito]	Factory Method (Diminuir o acoplamento delegando a instanciação de objetos à outra classe) [Exemplo: Pizza]
+	Prototype
+	Singleton
+
+Estruturais
+
+	Adapter
+[Feito]	Bridge (Variar a estrutura de dois lados independentemente) [Exemplo: Relatório e modo de exportação]
+	Composite
+	Decorator
+	Facade
+	Fly Weigth
+	Proxy
+
+
+Comportamentais
+
+	Chain of Responsability
+	Command
+	Interpreter
+	Iterator
+	Mediator
+	Memento
+	Observer
+	State
+[Feito]	Strategy (Alterar o comportamento em tempo de execução.) [Exemplo: Modo de Comer]
+[Feito]	Template Method (Altera o comportamento de um método em questão.) [Exemplo: Geração de relatórios]
+	Visitor
+
+
+#1 -> Strategy
+	Composição da estratégia no objeto "caller", onde a implementação herda a estratégia para implementar.
+	Objeto <>---- Strategy <---- Implementação [x]
+			   ^-------- Implementação [y]
+	"Composição do método que você compôs."
+
+#2 -> Template Method
+	Realizar uma sequência de passos o qual um dos passos pode ser modificado.
+	Abstração do método que será diferente nas outras classes.
+
+#3 -> Factory Method
+	Delegar a responsabilidade de instanciar objetos à uma fábrica, diminuindo o acoplamento.
+
+#4 -> Bridge
+	Permitir alteração e variação de dois lados independentemente.
+	Strategy + Template
