@@ -48,3 +48,8 @@ Comportamentais
 #4 -> Bridge
 	Permitir alteração e variação de dois lados independentemente.
 	Strategy + Template
+
+#5 -> State
+	Semelhante ao strategy, permite a troca de "estado" em tempo de execução.
+	No strategy, o cliente é responsável pela troca de comportamento.
+	No State, a troca pode ser realizada por terceiros (não necessáriamente é feita pelo cliente).
