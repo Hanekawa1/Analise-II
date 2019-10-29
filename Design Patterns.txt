@@ -10,23 +10,21 @@ Estruturais
 
 	Adapter
 [Feito]	Bridge (Variar a estrutura de dois lados independentemente) [Exemplo: Relatório e modo de exportação]
-	Composite
-	Decorator
+[Feito]	Composite
+[Feito]	Proxy/Decorator
 	Facade
 	Fly Weigth
-	Proxy
-
-
+	
 Comportamentais
 
-	Chain of Responsability
+[Feito]	Chain of Responsibility (Executa em sequência podendo mudar em tempo de execução.)
 	Command
 	Interpreter
 	Iterator
 	Mediator
 	Memento
-	Observer
-	State
+[Feito]	Observer (Notifica objetos observadores sobre alterações no objeto observado)[Exemplo: Termômetro]
+[Feito]	State (Altera o estado de um objeto.)[Exemplo: Personagem com pouca vida]
 [Feito]	Strategy (Alterar o comportamento em tempo de execução.) [Exemplo: Modo de Comer]
 [Feito]	Template Method (Altera o comportamento de um método em questão.) [Exemplo: Geração de relatórios]
 	Visitor
@@ -53,3 +51,21 @@ Comportamentais
 	Semelhante ao strategy, permite a troca de "estado" em tempo de execução.
 	No strategy, o cliente é responsável pela troca de comportamento.
 	No State, a troca pode ser realizada por terceiros (não necessáriamente é feita pelo cliente).
+
+#6 -> Observer
+Resposta "errada"() 
+{
+	Uma classe fica responsável por "observar" possíveis alterações em outras classes para assim realizar ações, como
+	por exemplo, notificar um usuário quando o preço de um produto mudar.
+}
+	Ao que foi explicado como correção da resposta acima, uma classe que está sendo observada fica responsável
+	por notificar classes que a estão observando quando seu estado mudar.
+
+#7 -> Composite
+	Trata objetos simples e compostos como iguais.
+
+#8 -> Chain of Responsibility
+	Sequência de passos que pode ser alterada em tempo de execução.
+
+#9 -> Proxy/Decorator
+	Filtrar requisições.
