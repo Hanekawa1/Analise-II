@@ -4,11 +4,11 @@ Criacionais
 	Builder
 [Feito]	Factory Method (Diminuir o acoplamento delegando a instanciação de objetos à outra classe) [Exemplo: Pizza]
 	Prototype
-	Singleton
+[Feito]	Singleton
 
 Estruturais
 
-	Adapter
+[Feito]	Adapter
 [Feito]	Bridge (Variar a estrutura de dois lados independentemente) [Exemplo: Relatório e modo de exportação]
 [Feito]	Composite
 [Feito]	Proxy/Decorator
@@ -69,3 +69,4 @@ Resposta "errada"()
 
 #9 -> Proxy/Decorator
 	Filtrar requisições.
+
